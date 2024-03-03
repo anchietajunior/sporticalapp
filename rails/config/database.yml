@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  host: localhost
+  port: 5432
+  username: postgres
+  password: postgres
+  database: sportical_development
+
+test:
+  <<: *default
+  host: localhost
+  port: 5432
+  username: postgres
+  password: postgres
+  database: sportical_test
+
+production:
+  <<: *default
+  database: sportical_production
+  username: sportical
+  password: <%= ENV["SPORTICAL_DATABASE_PASSWORD"] %>

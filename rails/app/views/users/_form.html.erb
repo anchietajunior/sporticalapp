@@ -1,0 +1,35 @@
+<%= form_with(model: user, class: "contents") do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :password %>
+    <%= form.text_field :password, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :password_confirmation %>
+    <%= form.text_field :password_confirmation, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline flex justify-between	">
+    <%= form.submit action_name == "edit" ? "Update info" : "Let's go", class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
+    <% unless action_name == "edit" %>
+      <%= link_to "Or Login", login_path, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white" %>
+    <% end %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<div class="mx-auto md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl">Editing user</h1>
+
+  <%= render "form", user: @user %>
+
+  <hr class="mt-4">
+
+  <div class="inline flex justify-between my-4">
+    <%= link_to "SignOut", signout_path,
+      data: { turbo_method: :delete },
+      class: "flex-1 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white"
+    %>
+  </div>
+
+  <hr>
+
+  <h1>Account</h1>
+
+  <p>Atention! This will delete the account and all data related to it.</p>
+</div>

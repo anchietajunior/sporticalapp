@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sport: 1
+  event_date: 2024-03-03 00:32:27
+  title: MyString
+  broadcast_platform: 1
+  url: MyString
+  user: one
+
+two:
+  sport: 1
+  event_date: 2024-03-03 00:32:27
+  title: MyString
+  broadcast_platform: 1
+  url: MyString
+  user: two

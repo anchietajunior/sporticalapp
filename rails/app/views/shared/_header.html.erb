@@ -1,0 +1,21 @@
+<header class="shadow-md turbo-native:hidden">
+  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+      <%= link_to root_path, class: "flex items-center pt-1" do %>
+        <%= inline_svg_tag("g8.svg", style: "max-height: 40px; max-width: 200px") %>
+      <% end %>
+
+      <div class="inline-block">
+        <% if user_signed_in? %>
+          <%= link_to edit_user_path(current_user) do %>
+            <%= inline_svg_tag("icons/user.svg", style: "max-height: 30px; max-width: 30px;") %>
+          <% end %>
+        <% else %>
+          <%= link_to new_user_path do %>
+            <%= inline_svg_tag("icons/user.svg", style: "max-height: 30px; max-width: 30px;") %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </nav>
+</header>

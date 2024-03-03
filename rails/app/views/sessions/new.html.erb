@@ -1,0 +1,18 @@
+<div class="mx-auto md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl mb-4">Sign in</h1>
+
+  <%= form_with(url: signin_path, class: "contents") do |form| %>
+    <div class="mb-5">
+      <%= form.label :email, "Email", class: "block mb-2 text-base font-medium text-gray-900"  %>
+      <%= form.email_field :email, autocomplete: "email", required: true, class: "bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5" %>
+    </div>
+    <div class="mb-5">
+      <%= form.label :password, "Password", class: "block mb-2 text-base font-medium text-gray-900"  %>
+      <%= form.password_field :password, required: true, class: "bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5" %>
+    </div>
+    <div class="inline flex justify-between	">
+      <%= form.submit "Let's go", class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
+      <%= link_to "Or SignUp", new_user_path, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white" %>
+    </div>
+  <% end %>
+</div>
