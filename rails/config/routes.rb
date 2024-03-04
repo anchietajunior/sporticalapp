@@ -7,5 +7,10 @@ Rails.application.routes.draw do
   get 'pages/get_started', as: :get_started
   resources :events
   resources :users, except: %i[index show]
+
+  resources :configurations, only: [] do
+    get :ios, on: :collection
+  end
+
   root 'events#index'
 end
