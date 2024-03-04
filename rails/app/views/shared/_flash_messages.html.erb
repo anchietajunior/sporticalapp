@@ -6,7 +6,7 @@
   else ['bg-gray-100', 'border-gray-500', 'text-gray-700']
   end %>
 
-  <div class="<%= "#{bg_color} #{border_color} #{text_color} p-4 w-full mt-4" %>" id="flash_messages" role="<%= key == 'alert' ? 'alert' : 'status' %>">
+  <div class="<%= "#{bg_color} #{border_color} #{text_color} p-4 mx-auto md:w-2/3 w-full mt-4" %>" role="<%= key == 'alert' ? 'alert' : 'status' %>">
     <p class="font-bold text-lg">Hey!</p>
     <p class="text-md"><%= message %></p>
   </div>
