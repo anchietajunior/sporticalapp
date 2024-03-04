@@ -41,7 +41,7 @@ class EventsController < ApplicationController
   private
 
   def set_event
-    @event = Event.find(params[:id])
+    @event = current_user.events.find(params[:id])
   end
 
   def event_params

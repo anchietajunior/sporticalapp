@@ -1,8 +1,8 @@
-<%= content_for :title, "Agenda" %>
+<%= content_for :title, "Calendar" %>
 
 <div class="mx-auto md:w-2/3 w-full mt-6">
   <div class="flex justify-between items-center mb-4">
-    <h1 class="font-bold text-2xl turbo-native:hidden">Agenda</h1>
+    <h1 class="font-bold text-2xl turbo-native:hidden">Calendar</h1>
     <div class="flex direction-row">
       <%= link_to new_event_path, "data-bridge-image": "plus", class: " rounded-lg py-1.5 px-2 bg-sdred text-white block font-medium turbo-native:hidden" do %>
         <%= inline_svg_tag("icons/plus.svg", style: "max-height: 30px; max-width: 30px; color: white") %>
