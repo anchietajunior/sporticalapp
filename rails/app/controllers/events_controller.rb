@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   before_action :set_event, only: %i[show edit update destroy]
 
   def index
-    @events = current_user.events.where('event_date > ?', Time.zone.now).order(event_date: :desc)
+    @events = current_user.events.where('event_date > ?', Time.zone.now).order(event_date: :asc)
   end
 
   def show; end

@@ -2,9 +2,13 @@
   <%= event.title %>
 </h3>
 
-<h4 class="mb-4 text-lg font-bold tracking-tight text-gray-800">
-  <%= "#{event.championship} | " %><%= event.event_date.strftime("%m-%d-%Y - %H:%m") %>
+<h4 class="mb-2 text-lg font-bold tracking-tight text-gray-800">
+  <%= event.championship %>
 </h4>
+
+<h5 class="mb-4 text-md font-bold tracking-tight text-gray-800">
+  <%= event.event_date.strftime("%m-%d-%Y - %H:%m") %>
+</h5>
 
 <p class="mb-3 font-normal text-gray-700">
   <span class="bg-sdred text-white text-sm font-medium me-2 px-2.5 py-1.5 rounded">

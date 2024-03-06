@@ -1,5 +1,7 @@
+<%= content_for :title, "Account" %>
+
 <div class="mx-auto md:w-2/3 w-full">
-  <h1 class="font-bold text-4xl">Editing user</h1>
+  <h1 class="font-bold text-4xl turbo-native:hidden">Editing user</h1>
 
   <%= render "form", user: @user %>
 
@@ -7,7 +9,7 @@
 
   <div class="inline flex justify-between my-4">
     <%= link_to "SignOut", signout_path,
-      data: { turbo_method: :delete },
+      data: { turbo_method: :delete, turbo_action: "replace" },
       class: "flex-1 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white"
     %>
   </div>

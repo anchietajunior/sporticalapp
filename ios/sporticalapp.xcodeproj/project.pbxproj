@@ -16,6 +16,10 @@
 		E487C1722B9615A20008BD83 /* TurboNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = E487C1712B9615A20008BD83 /* TurboNavigator */; };
 		E487C1752B9615CD0008BD83 /* Strada in Frameworks */ = {isa = PBXBuildFile; productRef = E487C1742B9615CD0008BD83 /* Strada */; };
 		E487C1772B9616300008BD83 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487C1762B9616300008BD83 /* Endpoint.swift */; };
+		E4ACD5632B96181D00FB50E3 /* BridgeComponent+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACD5622B96181D00FB50E3 /* BridgeComponent+App.swift */; };
+		E4ACD5652B96187000FB50E3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACD5642B96187000FB50E3 /* WebViewController.swift */; };
+		E4ACD5672B9618C500FB50E3 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACD5662B9618C500FB50E3 /* ButtonComponent.swift */; };
+		E4ACD5692B9618D600FB50E3 /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACD5682B9618D600FB50E3 /* MenuComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E487C1682B9610860008BD83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E487C16A2B9610860008BD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E487C1762B9616300008BD83 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E4ACD5622B96181D00FB50E3 /* BridgeComponent+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BridgeComponent+App.swift"; sourceTree = "<group>"; };
+		E4ACD5642B96187000FB50E3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E4ACD5662B9618C500FB50E3 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
+		E4ACD5682B9618D600FB50E3 /* MenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		E487C15B2B9610840008BD83 /* sporticalapp */ = {
 			isa = PBXGroup;
 			children = (
+				E4ACD5612B9617FD00FB50E3 /* Strada */,
 				E487C15C2B9610840008BD83 /* AppDelegate.swift */,
 				E487C15E2B9610840008BD83 /* SceneDelegate.swift */,
 				E487C1602B9610840008BD83 /* ViewController.swift */,
@@ -70,8 +79,19 @@
 				E487C1672B9610860008BD83 /* LaunchScreen.storyboard */,
 				E487C16A2B9610860008BD83 /* Info.plist */,
 				E487C1762B9616300008BD83 /* Endpoint.swift */,
+				E4ACD5642B96187000FB50E3 /* WebViewController.swift */,
 			);
 			path = sporticalapp;
+			sourceTree = "<group>";
+		};
+		E4ACD5612B9617FD00FB50E3 /* Strada */ = {
+			isa = PBXGroup;
+			children = (
+				E4ACD5622B96181D00FB50E3 /* BridgeComponent+App.swift */,
+				E4ACD5662B9618C500FB50E3 /* ButtonComponent.swift */,
+				E4ACD5682B9618D600FB50E3 /* MenuComponent.swift */,
+			);
+			path = Strada;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E487C1612B9610840008BD83 /* ViewController.swift in Sources */,
+				E4ACD5652B96187000FB50E3 /* WebViewController.swift in Sources */,
 				E487C15D2B9610840008BD83 /* AppDelegate.swift in Sources */,
 				E487C1772B9616300008BD83 /* Endpoint.swift in Sources */,
+				E4ACD5672B9618C500FB50E3 /* ButtonComponent.swift in Sources */,
 				E487C15F2B9610840008BD83 /* SceneDelegate.swift in Sources */,
+				E4ACD5692B9618D600FB50E3 /* MenuComponent.swift in Sources */,
+				E4ACD5632B96181D00FB50E3 /* BridgeComponent+App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

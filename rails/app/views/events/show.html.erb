@@ -1,15 +1,17 @@
 <div class="mx-auto md:w-2/3 w-full mt-6">
   <%= render @event %>
 
-  <div class="inline flex justify-between mt-4">
-    <%= link_to "Edit", edit_event_path(@event), class: "flex-1 rounded-lg py-3 px-5 bg-gray-500 text-white text-center inline-block font-medium" %>
+  <div class="inline flex justify-between mt-4 turbo-native:hidden" data-controller="bridge--menu">
+    <%= link_to "Edit", edit_event_path(@event), 
+      "data-bridge--menu-target": "edit",
+      class: "flex-1 rounded-lg py-3 px-5 bg-gray-500 text-white text-center inline-block font-medium" %>
     <%= link_to "Delete",
       event_path(@event),
       data: { 
         turbo_method: :delete,
         turbo_confirm: "Are you sure?",
         "bridge--menu-target": "delete"
-      }, class: "flex-1 ml-2 text-center rounded-lg text-white py-3 px-5 bg-sdred inline-block font-medium turbo-native:hidden" %>
+      }, class: "flex-1 ml-2 text-center rounded-lg text-white py-3 px-5 bg-sdred inline-block font-medium" %>
     <%= link_to "Back", events_path, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 text-center text-white inline-block font-medium" %>
   </div>
 </div>

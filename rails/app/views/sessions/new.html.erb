@@ -11,8 +11,8 @@
       <%= form.password_field :password, required: true, class: "bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5" %>
     </div>
     <div class="inline flex justify-between	">
-      <%= form.submit "Let's go", class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
-      <%= link_to "Or SignUp", new_user_path, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white" %>
+      <%= form.submit "Let's go", data: { turbo_action: "replace" }, class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
+      <%= link_to "Or SignUp", new_user_path, data: { turbo_action: "replace" }, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white" %>
     </div>
   <% end %>
 </div>

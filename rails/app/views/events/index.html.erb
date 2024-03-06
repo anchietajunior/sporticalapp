@@ -1,10 +1,15 @@
 <%= content_for :title, "Calendar" %>
 
-<div class="mx-auto md:w-2/3 w-full mt-6">
+<div class="mx-auto md:w-2/3 w-full mt-4">
   <div class="flex justify-between items-center mb-4">
     <h1 class="font-bold text-2xl turbo-native:hidden">Calendar</h1>
     <div class="flex direction-row">
-      <%= link_to new_event_path, "data-bridge-image": "plus", class: " rounded-lg py-1.5 px-2 bg-sdred text-white block font-medium turbo-native:hidden" do %>
+      <%= link_to new_event_path, 
+        "data-controller": "bridge--button",
+        "data-bridge-image": "plus", 
+        "data-bridge-title": "Add Event", 
+        "data-bridge-action": "add", 
+        class: " rounded-lg py-1.5 px-2 bg-sdred text-white block font-medium turbo-native:hidden" do %>
         <%= inline_svg_tag("icons/plus.svg", style: "max-height: 30px; max-width: 30px; color: white") %>
       <% end %>
     </div>
@@ -13,5 +18,13 @@
   <div id="events" class="min-w-full">
     <%= render @events %>
   </div>
+
+  <%= link_to "Edit User", edit_user_path(current_user), 
+    "data-controller": "bridge--button", 
+    "data-bridge-image": "person.circle", 
+    "data-bridge-side": "left", 
+    "data-bridge-title": "Edit Account", 
+    "data-bridge-action": "edit", 
+    class: "invisible" %>
 </div>
 

@@ -18,7 +18,8 @@ class Event < ApplicationRecord
     netflix: 3,
     prime_video: 4,
     hbo_max: 5,
-    apple_tv: 6
+    apple_tv: 6,
+    open_tv: 7
   }
 
   validates :title, presence: true
