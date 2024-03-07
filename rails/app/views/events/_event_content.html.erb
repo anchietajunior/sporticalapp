@@ -1,12 +1,14 @@
-<h3 class="mb-2 text-2xl font-bold tracking-tight text-sdred">
+<% is_show = action_name == "show" %>
+
+<h3 class="mb-2 text-<%= is_show ? '4' : '2'%>xl font-bold tracking-tight text-sdred">
   <%= event.title %>
 </h3>
 
-<h4 class="mb-2 text-lg font-bold tracking-tight text-gray-800">
+<h4 class="mb-2 <%= is_show ? 'text-2xl' : 'text-lg' %> font-bold tracking-tight text-gray-800">
   <%= event.championship %>
 </h4>
 
-<h5 class="mb-4 text-md font-bold tracking-tight text-gray-800">
+<h5 class="mb-4 <%= is_show ? 'text-lg' : 'text-md' %> font-bold tracking-tight text-gray-800">
   <%= event.event_date.strftime("%m-%d-%Y - %H:%m") %>
 </h5>
 

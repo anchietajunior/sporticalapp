@@ -51,7 +51,8 @@ class EventsController < ApplicationController
       :title,
       :broadcast_platform,
       :url,
-      :championship
+      :championship,
+      :more_info
     ).merge(user: current_user)
   end
 end
