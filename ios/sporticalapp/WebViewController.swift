@@ -16,6 +16,9 @@ final class WebViewController: VisitableViewController, BridgeDestination {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "", style: .plain, target: nil, action: nil
+        )
         bridgeDelegate.onViewDidLoad()
     }
 

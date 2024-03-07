@@ -12,7 +12,7 @@
 
     <% if event.url.present? %>
       <p class="my-5">
-        <%= link_to event.url, class: "rounded-lg pt-3 pb-4 px-4 bg-sdred text-white flex font-medium turbo-native:hidden", target: "_blank" do %>
+        <%= link_to event.url, class: "rounded-lg pt-3 pb-4 px-4 bg-sdred text-white flex font-medium", target: "_blank" do %>
           <%= inline_svg_tag("icons/watch.svg", style: "max-height: 30px; max-width: 30px; color: white") %>
           <span class="ml-2 pt-[5px]"><%= event.url.truncate(50, separator: ' ')  %></span>
         <% end %>
