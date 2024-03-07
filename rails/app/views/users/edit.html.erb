@@ -16,7 +16,14 @@
 
   <hr>
 
-  <h1>Account</h1>
+  <h1 class="mt-4 font-bold font-medium text-2xl">Account</h1>
 
-  <p>Atention! This will delete the account and all data related to it.</p>
+  <p class="text-sred text-lg">Atention! This will delete the account and all data related to it.</p>
+
+  <div class="inline flex justify-between my-4">
+    <%= link_to "Delete Account", user_path(current_user),
+      data: { turbo_method: :delete, turbo_action: "replace", turbo_confirm: "Are you sure?" },
+      class: "flex-1 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white"
+    %>
+  </div>
 </div>

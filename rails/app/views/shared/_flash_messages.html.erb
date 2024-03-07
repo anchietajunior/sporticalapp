@@ -1,12 +1,12 @@
 <% if flash.any? %>
   <% key, message = flash.to_a.last %>
   <% bg_color, border_color, text_color = case key
-  when 'alert' then ['bg-orange-100', 'border-orange-500', 'text-white']
+  when 'alert' then ['bg-orange-100', 'border-orange-500', 'text-sblack']
   when 'notice' then ['bg-slgray', 'border-gray-500', 'text-sblack']
   else ['bg-gray-100', 'border-gray-500', 'text-gray-700']
   end %>
 
-  <div class="<%= "#{bg_color} #{border_color} #{text_color} p-4 mx-auto md:w-2/3 w-full mt-4" %>" role="<%= key == 'alert' ? 'alert' : 'status' %>">
+  <div class="<%= "#{bg_color} #{border_color} #{text_color} p-4 mx-auto md:w-2/3 w-full my-4" %>" role="<%= key == 'alert' ? 'alert' : 'status' %>">
     <p class="font-bold text-lg">Hey!</p>
     <p class="text-md"><%= message %></p>
   </div>

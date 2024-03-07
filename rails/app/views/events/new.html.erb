@@ -1,5 +1,7 @@
+<%= content_for :title, "New Event" %>
+
 <div class="mx-auto md:w-2/3 w-full">
-  <h1 class="font-bold text-4xl">New event</h1>
+  <h1 class="font-bold text-4xl turbo-native:hidden">New event</h1>
 
   <%= render "form", event: @event %>
 
