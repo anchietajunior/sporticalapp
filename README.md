@@ -18,7 +18,8 @@ See your created sport events ordered by date and their details.
 
 Modals on iOS
 
-<img width="461" alt="modals" src="https://github.com/anchietajunior/sporticalapp/assets/8007754/6f8f34cb-a249-4f24-bbaa-7ba2537de075">
+![1709903679687718](https://github.com/anchietajunior/sporticalapp/assets/8007754/4589400f-b16a-4af7-b6c2-189cf876b921)
+
 
 Native nagivation.
 
