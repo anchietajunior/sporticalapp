@@ -11,13 +11,10 @@ in modern Rails applications and mobile integrations.
 
 ## Screens
 
-See your created sport events ordered by date.
+See your created sport events ordered by date and their details.
 
-<img width="446" alt="events" src="https://github.com/anchietajunior/sporticalapp/assets/8007754/87236e7d-6f35-4dd3-84e9-0dc6c893a5c2">
+![1709903485297970](https://github.com/anchietajunior/sporticalapp/assets/8007754/662db78a-570a-4360-9c14-5ff01f4057d0)
 
-Check the event details.
-
-<img width="449" alt="event" src="https://github.com/anchietajunior/sporticalapp/assets/8007754/850dcd1f-f1a6-45f8-8a0d-da8eb9cdf469">
 
 Modals on iOS
 
