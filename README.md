@@ -21,14 +21,7 @@ Modals on iOS
 ![1709903679687718](https://github.com/anchietajunior/sporticalapp/assets/8007754/4589400f-b16a-4af7-b6c2-189cf876b921)
 
 
-Native nagivation.
+Native nagivation. Navite actions. Native alerts.
 
-<img width="450" alt="navigation" src="https://github.com/anchietajunior/sporticalapp/assets/8007754/f86f6ba9-fa1b-49e5-9095-b89a1a159299">
+![170990398798226](https://github.com/anchietajunior/sporticalapp/assets/8007754/1c78d50b-1219-4946-b43b-8eadb2006a81)
 
-Navite actions.
-
-<img width="430" alt="commands" src="https://github.com/anchietajunior/sporticalapp/assets/8007754/1fc1fb82-10a7-4ab1-a5a3-9d156d2a5a56">
-
-Native alert.
-
-<img width="442" alt="alert" src="https://github.com/anchietajunior/sporticalapp/assets/8007754/86ba4036-f5ac-4d08-8925-e8b9951775ae">
