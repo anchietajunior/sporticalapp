@@ -13,48 +13,59 @@
 
   <div class="my-5">
     <%= form.label :sport %>
-    <%= form.select :sport, 
-      Event.sports.keys.map { |s| [s.titleize, s] }, 
-      { include_blank: false }, 
+    <%= form.select :sport,
+      Event.sports.keys.map { |s| [s.titleize, s] },
+      { include_blank: false },
       class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :event_date %>
-    <%= form.datetime_field :event_date, 
+    <%= form.datetime_field :event_date,
       class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :title %>
-    <%= form.text_field :title, placeholder: "Team 1 x Team 2, São Paulo circuit", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :title,
+      placeholder: "Team 1 x Team 2, São Paulo circuit",
+      class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :championship %>
-    <%= form.text_field :championship, placeholder: "World Championship, Premier League...", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :championship,
+      placeholder: "World Championship, Premier League...",
+      class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :broadcast_platform %>
-    <%= form.select :broadcast_platform, 
-      Event.broadcast_platforms.keys.map { |b| [b.titleize, b] }, 
-      { include_blank: false }, 
+    <%= form.select :broadcast_platform,
+      Event.broadcast_platforms.keys.map { |b| [b.titleize, b] },
+      { include_blank: false },
       class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :url, "URL" %>
-    <%= form.text_field :url, placeholder: "https://...", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :url,
+      placeholder: "https://...",
+      class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :more_info, "More info" %>
-    <%= form.text_area :more_info, cols: 20, rows: 8, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_area :more_info,
+      cols: 20,
+      rows: 8,
+      class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline flex justify-between mt-4">
     <%= form.submit class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
-    <%= link_to "Back to events", events_path, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block text-white text-center font-medium turbo-native:hidden" %>
+    <%= link_to "Back to events",
+      events_path,
+      class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block text-white text-center font-medium turbo-native:hidden" %>
   </div>
 <% end %>
