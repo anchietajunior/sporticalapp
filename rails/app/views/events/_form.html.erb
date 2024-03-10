@@ -63,7 +63,8 @@
   </div>
 
   <div class="inline flex justify-between mt-4">
-    <%= form.submit class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit data: { controller: "bridge--button", "bridge-title": "Save", "bridge-action": "create" }, 
+      class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer turbo-native:hidden" %>
     <%= link_to "Back to events",
       events_path,
       class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block text-white text-center font-medium turbo-native:hidden" %>

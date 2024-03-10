@@ -5,15 +5,20 @@ export default class extends BridgeComponent {
 
   connect() {
     super.connect()
-    this.notifyBridge()
+    this.#notifyBridge()
   }
 
-  notifyBridge() {
+  #notifyBridge() {
     const element = this.bridgeElement
-    const image = element.bridgeAttribute("image")
-    const side = element.bridgeAttribute("side") || "right"
-    const action = element.bridgeAttribute("action")
-    this.send(action, { title: element.title, image, side, action }, () => {
+
+    const buttonAttributes = {
+      title: element.bridgeAttribute("title") || "Save",
+      image: element.bridgeAttribute("image") || "",
+      side: element.bridgeAttribute("side") || "right",
+      action: element.bridgeAttribute("action") || "save"
+    }
+
+    this.send(buttonAttributes.action, buttonAttributes, () => {
       this.element.click()
     })
   }
