@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   before_action :redirect_if_authenticated, only: %i[get_started]
 
   def get_started; end
+
+  def support; end
 end

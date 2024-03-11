@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'sessions/create', as: :signin
   delete 'sessions/destroy', to: 'sessions#destroy', as: :signout
   get 'pages/get_started', as: :get_started
+  get 'pages/support', as: :support
   resources :events
   resources :users, except: %i[index show]
 
