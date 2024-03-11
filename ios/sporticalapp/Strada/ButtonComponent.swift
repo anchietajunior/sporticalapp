@@ -17,7 +17,7 @@ class ButtonComponent: BridgeComponent {
     private func addButton(via message: Message, to viewController: UIViewController) {
         guard let data: MessageData = message.data() else { return }
 
-        let image = UIImage(systemName: data.image)
+        let image = UIImage(systemName: data.image ?? "")
         
         let action = UIAction(title: data.title) { _ in
             self.reply(to: data.action)
@@ -36,7 +36,7 @@ class ButtonComponent: BridgeComponent {
 private extension ButtonComponent {
     struct MessageData: Decodable {
         let title: String
-        let image: String
+        let image: String?
         let side: String
         let action: String
     }
