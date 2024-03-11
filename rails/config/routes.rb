@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   delete 'sessions/destroy', to: 'sessions#destroy', as: :signout
   get 'pages/get_started', as: :get_started
   get 'pages/support', as: :support
+  get 'pages/policy', as: :policy
   resources :events
   resources :users, except: %i[index show]
 

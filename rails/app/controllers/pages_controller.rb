@@ -7,4 +7,6 @@ class PagesController < ApplicationController
   def get_started; end
 
   def support; end
+
+  def policy; end
 end
