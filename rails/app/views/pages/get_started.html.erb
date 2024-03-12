@@ -1,11 +1,15 @@
 <%= content_for :title, "Get started" %>
 
 <div class="mx-auto md:w-2/3 w-full pt-4 flex flex-col">
-  <h3 class="mb-2 text-lg inline-block">This is the events calander example, You can <strong>adding your events to your own calendar.</strong></h3>
-  <%= link_to "Get Started", 
-    new_user_path, 
-    data: { turbo_action: "replace" }, 
-    class: "max-w-fit rounded-lg py-3 px-5 bg-sdred text-white font-medium mb-4" %>
+  <div class="p-4 w-full my-4 bg-slgray border-gray-500 text-sblack flex flex-col">
+    <h3 class="mb-2 text-lg inline-block">This is the Events Calander example.
+    <br>
+    You can have your own.</h3>
+    <%= link_to "Get Started", 
+      new_user_path, 
+      data: { turbo_action: "replace" }, 
+      class: "max-w-fit rounded-lg py-3 px-5 bg-sdred text-white font-medium mb-2" %>
+  </div>
 
   <div id="event_id">
     <%= link_to event_example_path do %>
