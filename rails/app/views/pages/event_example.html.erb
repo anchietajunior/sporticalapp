@@ -1,0 +1,51 @@
+<%= content_for :title, "Event example" %>
+
+<div class="mx-auto md:w-2/3 w-full pt-4 flex flex-col">
+  <h3 class="mb-2 text-lg inline-block">This is an event details example, You can <strong>start creating your own events</strong>.</h3>
+  <%= link_to "Get Started", 
+    new_user_path, 
+    data: { turbo_action: "replace" }, 
+    class: "max-w-fit rounded-lg py-3 px-5 bg-sdred text-white font-medium" %>
+
+  <hr class="mt-4">
+
+  <div class="mt-4 turbo-native:ml-2">
+    <h3 class="mb-2 text-4xl font-bold tracking-tight text-sdred">
+      Novak Djokovic x Rafael Nadal
+    </h3>
+
+    <h4 class="mb-2 text-2xl font-bold tracking-tight text-gray-800">
+      Roland Garros
+    </h4>
+
+    <h5 class="mb-4 text-lg font-bold tracking-tight text-gray-800">
+      05-10-2024 - 02:30
+    </h5>
+
+    <p class="mb-3 font-normal text-gray-700">
+      <span class="bg-sdred text-white text-sm font-medium me-2 px-2.5 py-1.5 rounded">
+        Tennis
+      </span>
+      <span class="bg-gray-500 text-white text-sm font-medium me-2 px-2.5 py-1.5 rounded">
+        Start Plus
+      </span>
+    </p>
+  </div>
+
+  <p class="my-5 text-lg">
+    Get ready for an epic showdown at Roland Garros between tennis 
+    titans Novak Djokovic and Rafael Nadal. This match promises to 
+    be a tournament highlight, showcasing the intense rivalry and 
+    technical mastery of both players. As Djokovic aims for another 
+    title, Nadal, the "King of Clay," seeks to defend his turf. 
+    This game is more than a match; it's a historic battle that will 
+    be etched in the annals of tennis.
+  </p>
+
+  <p class="mt-2">
+    <div class="rounded-lg pt-3 pb-4 px-4 bg-sdred text-white flex font-medium">
+      <%= inline_svg_tag("icons/watch.svg", style: "max-height: 30px; max-width: 30px; color: white") %>
+      <span class="ml-2 pt-[5px]">Link to the streaming</span>
+    </div>
+  </p>
+</div>
