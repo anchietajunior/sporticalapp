@@ -2,9 +2,7 @@
 
 <div class="mx-auto md:w-2/3 w-full pt-4 flex flex-col">
   <div class="p-4 w-full my-4 bg-slgray border-gray-500 text-sblack flex flex-col">
-    <h3 class="mb-2 text-lg inline-block">This is the Events Calander example.
-    <br>
-    You can have your own.</h3>
+    <h3 class="mb-2 text-lg inline-block font-bold">Start adding events like these to your calendar.</h3>
     <%= link_to "Get Started", 
       new_user_path, 
       data: { turbo_action: "replace" }, 
@@ -37,7 +35,7 @@
       </div>
     <% end %>
 
-    <%= link_to "#" do %>
+    <%= link_to event_example2_path do %>
       <div class="w-full px-6 py-4 bg-white border border-gray-200 rounded-lg shadow mb-4">
         <h3 class="mb-2 text-2xl font-bold tracking-tight text-sdred">
           Chelsea x Liverpool

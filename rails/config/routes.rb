@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'pages/support', as: :support
   get 'pages/policy', as: :policy
   get 'pages/event_example', as: :event_example
+  get 'pages/event_example2', as: :event_example2
 
   # RESOURCES
   resources :events
