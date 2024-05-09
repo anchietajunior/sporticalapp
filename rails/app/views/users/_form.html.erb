@@ -27,7 +27,12 @@
   </div>
 
   <div class="inline flex justify-between	">
-    <%= form.submit action_name == "edit" ? "Update info" : "Let's go", class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit action_name == "edit" ? "Update info" : "Let's go", 
+      class: "flex-1 rounded-lg py-3 px-5 bg-sdred text-white inline-block font-medium cursor-pointer turbo-native:hidden",
+      "data-controller": "bridge--button",
+      "data-bridge-action": "edit",
+      "data-bridge-title": "Save"
+    %>
     <% unless action_name == "edit" %>
       <%= link_to "Or Login", login_path, class: "flex-1 ml-2 rounded-lg py-3 px-5 bg-gray-500 inline-block font-medium text-center text-white" %>
     <% end %>
